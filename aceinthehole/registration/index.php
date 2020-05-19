@@ -52,15 +52,16 @@ if (isset($_POST['name']) && empty($_POST['honeypot'])) {
         include '../includes/error.html.php';
         exit();
     }
+        // load the thank you page after the INSERT runs
+    include 'success.html.php';        
 
 
     // Add an else to load the initial page if the initial (line 19) if statement is false
 }  else {
     
     
-    // load the thank you page after the INSERT runs
-    include 'success.html.php';    
-    include 'registration.html.php'; //Modify this to include the initial file for this folder
+
+    include '../includes/error.html.php'; //Modify this to include the initial file for this folder   
 }
 ?>
 
