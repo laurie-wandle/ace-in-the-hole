@@ -28,18 +28,19 @@ if (isset($_POST['visitorname']) && empty($_POST['honeypot'])) {
       $s->bindValue(':questioncomment', $questioncomment);
       $s->execute();
     }
-    catch (PDOException $e)
+        catch (PDOException $e)
     {
         $error = 'Error adding submitted response: ' . $e->getMessage();
         include '../includes/error.html.php';
         exit();
     }
-    // load the thank you page after the INSERT runs
-    include 'success.html.php';
+        // load the thank you page after the INSERT runs
+    include 'success.html.php';        
+
 
     // Add an else to load the initial page if the initial (line 19) if statement is false
 }  else {
 
-    include 'contact.html.php'; //Modify this to include the initial file for this folder
+    include '../includes/error.html.php'; //Modify this to include the initial file for this folder   
 }
 ?>
