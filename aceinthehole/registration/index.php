@@ -21,8 +21,7 @@ if (isset($_POST['name']) && empty($_POST['honeypot'])) {
     // And run the try/catch to attempt to insert data in the database. Modify the INSERT statement to write all the form filed values (except the honeypot) to the database.
     try
     {
-      $sql = /** @lang text */
-          'INSERT INTO registration SET
+      $sql = 'INSERT INTO registration SET
           name = :name,
           age = :age,
           role = :role,
@@ -52,16 +51,13 @@ if (isset($_POST['name']) && empty($_POST['honeypot'])) {
         include '../includes/error.html.php';
         exit();
     }
-        // load the thank you page after the INSERT runs
-    include 'success.html.php';        
-
+    // load the thank you page after the INSERT runs
+    include 'success.html.php';
 
     // Add an else to load the initial page if the initial (line 19) if statement is false
-}  else {
-    
-    
+   }  else {
 
-    include '../includes/error.html.php'; //Modify this to include the initial file for this folder   
-}
+    include '../includes/error.html.php';
+   }
 ?>
 

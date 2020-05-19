@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -17,12 +17,29 @@
 
 <body>
 
-<div id="wrapper">
+<div class="wrapper">
+
     <?php include '../includes/header.inc.html.php'; ?>
-    <?php include '../includes/nav.inc.html.php'; ?>
+
+    <div class="mobile-nav">
+        <div class="menu-btn" id="menu-btn">
+            <div></div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="responsive-menu">
+            <?php include '../includes/nav.inc.html.php'; ?>
+        </div>
+    </div>
+
+</div>
+
     <main>
         <h1>Thank you!</h1>
-        <p>Our records show you submitted the following:<br>
+        <br>
+            <p>Our records show you submitted the following:<br>
             Name: <?php echo htmlspecialchars($name, ENT_QUOTES, 'UTF-8'); ?><br><!-- print tour name from form submission here -->
             Age: <?php echo htmlspecialchars($age, ENT_QUOTES, 'UTF-8'); ?><br><!-- print first name from form submission here -->
             Role: <?php echo htmlspecialchars($role, ENT_QUOTES, 'UTF-8'); ?><br><!-- print last name from form submission here -->
@@ -33,10 +50,9 @@
             Saturday Events: <?php echo htmlspecialchars($saturday, ENT_QUOTES, 'UTF-8'); ?><br><!-- print food sensitivites from form submission here -->
             Sunday Events: <?php echo htmlspecialchars($sunday, ENT_QUOTES, 'UTF-8'); ?><br><!-- print food sensitivites from form submission here -->
             Special Accomodations: <?php echo htmlspecialchars($special, ENT_QUOTES, 'UTF-8'); ?><br><!-- print food sensitivites from form submission here -->
-
+            </p>
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>
-</div>
 
 </body>
 </html>

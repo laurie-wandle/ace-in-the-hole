@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -39,7 +39,7 @@
         <h1>Registration Form</h1>
 
         <div id="registration">
-            <form method="post" action="index.php">
+            <form method="post" action="index.php ">
                 <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
                 <label for="name">Full Name:</label>
                 <input type="text" name="name" id="name" required>
@@ -82,6 +82,15 @@
                     <option value="splashndash">Splash n Dash 12:00pm</option>
                 </select>
 
+                <label for="shirtsize">Shirt size(unisex):</label>
+                <select size="1" name="shirtsize" id="shirtsize" required>
+                    <option value=""></option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xtralarge">Extra Large</option>
+                    <option value="2X">2X</option>
+                </select>
                 <label for="special">Any special accommodations needed?</label>
                 <textarea name="special" id="special" rows="15" cols="40" required></textarea>
 
