@@ -40,7 +40,7 @@
 
     <div class="startTimes">
 
-        <form method="post" action=" ">
+        <form method="post" action="index.php">
             <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
 
             <label for="email">Email:</label>
