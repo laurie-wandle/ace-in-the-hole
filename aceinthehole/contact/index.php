@@ -3,7 +3,7 @@
 include '../includes/db.inc.html.php';
 
 // Modify the If statement so the try only runs if the visitorname field has been submitted AND the honeypot field is empty ''
-if (isset($_POST['visitorname']) And empty($_POST['honeypot'])) {
+if (isset($_POST['visitorname']) && empty($_POST['honeypot'])) {
 
     // If the if statement is true, save each form field value as a variable. These variable values will be used in the thank you page.$
 
