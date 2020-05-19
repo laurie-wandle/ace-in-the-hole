@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
 
@@ -36,12 +36,15 @@
 </div>
 <main>
 
-    <h1>Contact Us</h1>
+    <h1>Contact Form</h1>
 
     <div class="startTimes">
 
         <form method="post" action="index.php">
             <input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent"/>
+
+            <label for="visitorname">Name:</label>
+            <input type="text" name="visitorname" id="visitorname" required>
 
             <label for="email">Email:</label>
             <input type="text" name="email" id="email" required>
