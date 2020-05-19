@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: Rockwell;
+    font-family: Rockwell, serif;
     font-size: 1em;
     line-height: 1.5em;
     background-color: #000000;
@@ -35,9 +35,9 @@ body {
 
 header h1  {
     float: left;
-   margin: 0px 0px 0px 20px;
-
+   margin: 0 0 0 20px;
 }
+
 header img {
     width: 180px;
     height: 180px;
@@ -50,14 +50,12 @@ nav {
 nav a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 nav ul li {
     display: inline;
     margin-right: 40px;
-
-
 }
 
 nav a:link {
@@ -78,14 +76,13 @@ nav a:active {
 }
 
 main h1 {
-    font-family: Rockwell;
+    font-family: Rockwell, serif;
     color: #ffffff;
     text-align: center;
     height: 10px;
     margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: none;
 }
 
 main {
@@ -97,7 +94,7 @@ main {
     padding-bottom: 1px;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     color: #ffffff;
     background-color: #000000;
     overflow-y: hidden;
@@ -127,8 +124,6 @@ main {
     background-color: #000000;;
     overflow: hidden;
     padding: 20px;
-
-
 }
 
 #boxes p {
@@ -162,7 +157,6 @@ main {
     overflow-y: hidden;
     word-wrap: break-word;
 }
-
 
 #newsfeed {
     content: "";
@@ -201,7 +195,6 @@ main {
    
 }
 
-
 .twitter h2 {
     margin-top: 20px;
     margin-left: 20px;
@@ -226,71 +219,60 @@ form {
     padding: 10px 20px 80px 40px;
 }
 
-#honeypot {
-    display: none;
-}
-
 label {
     padding: 15px 12px 15px 0;
     display: inline-block;
-    font-family: Futura;
+    font-family: Futura, sans-serif;
     font-size: 1.4em;
 }
 
 input, select, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid;
     border-radius: 4px;
     resize: vertical;
-    font-size: 1.2em;
-    font-family: Futura;
+    font-size: 1.3em;
+    font-family: Futura, sans-serif;
+}
+
+#honeypot {
+    display: none;
 }
 
 #role {
     margin-bottom: 20px;
-    font-family: Futura;
-    font-size: 1.2em;
+    font-family: Futura, sans-serif;
 }
 
 #gender {
-    border-radius: 3px;
-    font-family: Futura;
-    font-size: 1.2em;
+    font-family: Futura, sans-serif;
+
 }
 
 #saturday {
-    font-family: Futura;
-    font-size: 1.2em;
-
+    font-family: Futura, sans-serif;
 }
 
 #sunday {
-    font-family: Futura;
-    font-size: 1.2em;
+    font-family: Futura, sans-serif;
 }
 
 #special {
-
-    font-family: Futura;
-    font-size: 1em;
+    font-family: Futura, sans-serif;
 }
 
 #party {
-    font-family: Futura;
-    font-size: 1.2em;
-
+    font-family: Futura, sans-serif;
 }
 
 #questioncomment {
-    font-family: Futura;
-    font-size: 1.2em;
-
+    font-family: Futura, sans-serif;
 }
 
 #submit {
-    font-family: Futura;
-    font-size: 1.4em;
+    font-family: Futura, sans-serif;
+    font-size: 2em;
     cursor: pointer;
     margin-top: 40px;
 }
@@ -306,7 +288,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 664px) {
+@media only screen and (max-width: 665px) {
 
     .menu-btn {
         margin-bottom: 30px;
@@ -394,7 +376,7 @@ footer {
     }
 
     nav  {
-        margin-top: 0px;
+        margin-top: 0;
 
     }
 

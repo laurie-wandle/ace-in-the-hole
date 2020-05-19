@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-family: Rockwell;
+    font-family: Rockwell, serif;
     font-size: 1em;
     line-height: 1.5em;
     background-color: @darkColor;
@@ -29,36 +29,33 @@ body {
 .wrapper {
     width: 100%;
     text-align: center;
-    background-color: @darkColor;
+    background-color: @lightColor;
     overflow: hidden;
 }
 
 header h1  {
     float: left;
-    margin: 0px 0px 0px 20px;
-
+    margin: 0 0 0 20px;
 }
+
 header img {
     width: 180px;
     height: 180px;
 }
 
 nav {
-    font-weight: bold;
     margin-top: 120px;
 }
 
 nav a {
     text-decoration: none;
     color: @lightColor;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 nav ul li {
     display: inline;
     margin-right: 40px;
-
-
 }
 
 nav a:link {
@@ -79,7 +76,7 @@ nav a:active {
 }
 
 main h1 {
-    font-family: Rockwell;
+    font-family: Rockwell, serif;
     color: @lightColor;
     text-align: center;
     height: 10px;
@@ -97,23 +94,20 @@ main {
     padding-bottom: 1px;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     color: @lightColor;
     background-color: @darkColor;
     overflow-y: hidden;
     word-wrap: break-word;
 }
 
-.imageplaceholder {
+#acetobutte {
+    background-image: url(../images/acetobutte2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100%;
     height: 500px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    padding: 40px 40px 0 40px;
-    background-color: @lightColor;
-
 }
-
 .imageplaceholder p {
     padding-top: 20px;
     padding-left: 20px;
@@ -130,8 +124,6 @@ main {
     background-color: @darkColor;
     overflow: hidden;
     padding: 20px;
-
-
 }
 
 #boxes p {
@@ -165,7 +157,6 @@ main {
     overflow-y: hidden;
     word-wrap: break-word;
 }
-
 
 #newsfeed {
     content: "";
@@ -204,7 +195,6 @@ main {
 
 }
 
-
 .twitter h2 {
     margin-top: 20px;
     margin-left: 20px;
@@ -218,43 +208,77 @@ main {
 
 }
 
+#registration {
+    border-radius: 5px;
+    padding: 20px;
+}
 
 form {
     background-color: @darkColor;
     margin-top: 10px;
-    padding: 10px 20px 80px 20px;
+    padding: 10px 20px 80px 40px;
 }
-form p {
-    font-size: 1em;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-
-input, textarea {
-    display: block;
-    margin-bottom: 2em;
-}
-
 
 label {
-    clear: left;
-    float: left;
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    padding-right: 10px;
-    text-align: right;
-    width: 200px;
+    padding: 15px 12px 15px 0;
+    display: inline-block;
+    font-family: Futura, sans-serif;
+    font-size: 1.4em;
 }
 
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 1.3em;
+    font-family: Futura, sans-serif;
+}
 
 #honeypot {
     display: none;
 }
 
-#mysubmit {
-    margin-top: 80px;
+#role {
+    margin-bottom: 20px;
+    font-family: Futura, sans-serif;
+}
+
+#gender {
+    font-family: Futura, sans-serif;
+
+}
+
+#saturday {
+    font-family: Futura, sans-serif;
+}
+
+#sunday {
+    font-family: Futura, sans-serif;
+}
+
+#special {
+    font-family: Futura, sans-serif;
+}
+
+#party {
+    font-family: Futura, sans-serif;
+}
+
+#questioncomment {
+    font-family: Futura, sans-serif;
+}
+
+#submit {
+    font-family: Futura, sans-serif;
+    font-size: 2em;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+input[type=submit]:hover {
+    background-color: @color1;
 }
 
 footer {
@@ -264,7 +288,7 @@ footer {
 
 }
 
-@media only screen and (max-width: 664px) {
+@media only screen and (max-width: 665px) {
 
     .menu-btn {
         margin-bottom: 30px;
@@ -325,7 +349,6 @@ footer {
         margin-top: 0;
         margin-right: 10px;
         margin-left: 10px;
-        background-color: @darkColor;
     }
 
     #boxes p {
@@ -353,8 +376,14 @@ footer {
     }
 
     nav  {
-        margin-top: 0px;
+        margin-top: 0;
 
+    }
+
+    form {
+
+        margin-top: 10px;
+        padding: 10px 20px 80px 40px;
     }
 
 }
