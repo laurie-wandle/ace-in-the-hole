@@ -1,4 +1,4 @@
-/* File Name: styles.less
+/* File Name: styles.css
 Date: 05/04/20
 Programmer: Laurie Wandle  */
 
@@ -20,7 +20,6 @@ html {
 
 body {
     font-family: Rockwell, serif;
-    font-size: 1em;
     line-height: 1.5em;
     background-color: @darkColor;
     color: @lightColor;
@@ -29,33 +28,51 @@ body {
 .wrapper {
     width: 100%;
     text-align: center;
-    background-color: @lightColor;
+    background-color: @darkColor;
     overflow: hidden;
 }
 
 header h1  {
     float: left;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 30px;
 }
 
 header img {
-    width: 180px;
-    height: 180px;
+    width: 120px;
+    height: 120px;
+}
+
+#links {
+    float: right;
+    padding: 20px;
+}
+
+#links a {
+    color: @lightColor;
+    padding-bottom: 5px;
+    padding-right: 10px;
 }
 
 nav {
-    margin-top: 120px;
+    margin-top: 60px;
+}
+
+nav ul {
+    float: right;
 }
 
 nav a {
     text-decoration: none;
     color: @lightColor;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 40px;
+    padding-right: 40px;
+    padding-left: 10px;
+    color: inherit;
+    font-weight: normal;
 }
 
 nav a:link {
@@ -64,7 +81,6 @@ nav a:link {
 
 nav a:visited {
     color: @lightColor;
-
 }
 
 nav a:hover {
@@ -72,7 +88,7 @@ nav a:hover {
 }
 
 nav a:active {
-    color: @color1;
+    color: @color5;
 }
 
 main h1 {
@@ -80,147 +96,660 @@ main h1 {
     color: @lightColor;
     text-align: center;
     height: 10px;
-    margin-top: 5px;
+    margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 
 main {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 100px;
-    padding-top: 20px;
     padding-bottom: 1px;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: Lato, sans-serif;
+    font-family: Verdana, sans-serif;
     color: @lightColor;
     background-color: @darkColor;
     overflow-y: hidden;
+    overflow-x: hidden;
     word-wrap: break-word;
 }
 
-#acetobutte {
-    background-image: url(../images/acetobutte2.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+
+/* Home page  */
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000%;
+    position: relative;
+    margin: auto;
+
+}
+
+/* Caption text */
+.text {
+    color: @lightColor2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
     width: 100%;
-    height: 500px;
+    text-align: left;
 }
-.imageplaceholder p {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* register now button */
+.slideshow-container .registernow {
+    position: absolute;
+    top: 91%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: @color1;
+    font-family: Verdana, sans-serif;
+    font-size: 1.6em;
+    font-weight: normal;
+    padding: 20px 30px 20px 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 18px;
     text-align: center;
-    color: @darkColor;
+}
+
+.registernow a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.registernow a:link {
+    color: @lightColor;
+}
+
+.registernow a:visited {
+    color: @lightColor;
 
 }
 
-#boxes {
+.registernow a:hover {
+    color: @darkColor;
+}
+
+.registernow a:active {
+    color: @color5;
+}
+
+/* welcome banner */
+
+#welcome {
+    display: block;
+    background-color: @color2;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+
+#welcome h1 {
+    font-weight: normal;
+    color: @lightColor;
+    padding-top: 20px;
+    font-size: 1.8em;
+}
+
+#welcome p {
+    margin-right: 20px;
+    margin-left: 30px;
+    font-size: 1.1em;
+    font-family: "Verdana", sans-serif;
+}
+
+/* about us section */
+
+#aboutus {
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    background-color: @darkColor;
+    overflow-x: hidden;
+    display: block;
+}
+
+.tutu img {
+    float: left;
+    width: 55%;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.aboutevent h1 {
+    padding-top: 15px;
+    padding-bottom: 12px;
+    line-height: .8em;
+    font-weight: normal;
+    font-family: "Verdana", sans-serif;
+    font-size: 1.6em;
+}
+
+.aboutevent p {
+    font-size: 1.2em;
+    font-weight: normal;
+    display: block;
+}
+
+/* starting times section */
+
+#startTimes {
+    border-radius: 3px;
+    background-color: @color2;
+    overflow-x: hidden;
+    padding: 10px 30px 20px 30px;
+
+}
+
+#startTimes h1 {
+    font-weight: normal;
+    font-size: 1.6em;
+    font-family: "Verdana", sans-serif;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+#startTimes li {
+    font-size: 1.2em;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column ul {
+    list-style-type: none;
+}
+
+.column img {
+    max-width: 100%;
+    height: 280px;
+    margin-top: 20px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Facebook and Twitter feeds*/
+
+#feed {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#feed:nth-child(2) {
+    padding: 20px 0 0 20px;
+}
+
+#newsfeed::after {
     content: "";
     display: table;
     clear: both;
-    background-color: @darkColor;
-    overflow: hidden;
-    padding: 20px;
-}
-
-#boxes p {
-    float: left;
-    background-color: @darkColor;
-    height: auto;
-    width: 48%;
-    margin: 10px 0 0 10px;
-    overflow-y: hidden;
-    word-wrap: break-word;
-}
-
-#column2 {
-    float: right;
-    background-color: @lightColor;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    height: 300px;
-    width: 40%;
-    overflow: auto;
-}
-
-.startTimes {
-    padding: 20px;
-    background-color: @darkColor;
-}
-
-.startTimes p {
-    font-size: 1em;
-    overflow-y: hidden;
-    word-wrap: break-word;
 }
 
 #newsfeed {
+    background-color: @color2;
+    margin-top: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 3px;
+}
+
+/* weather widget */
+
+#weather {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: @color2;
+    border-radius: 3px;
+
+}
+/* Home page ends */
+
+
+/* Event page */
+
+/* event page content section */
+
+.blackText {
+    color: @darkColor;
+    font-weight: bold;
+}
+
+#eventContent {
+    margin-top: 50px;
+    padding: 20px 10px 40px 10px;
+    background-color: @color2;
+    overflow: hidden;
+    display: block;
+    border-radius: 3px;
+}
+
+.eventcontent {
+    float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+#eventContent:after {
     content: "";
     display: table;
     clear: both;
-    background-color: @darkColor;
-    margin-bottom: 40px;
 }
 
-.faceBook {
-    float: left;
-    background-color: @darkColor;
-    height: 500px;
-    width: 50%;
-}
-
-.faceBook h2 {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.faceBook p {
-    background-color: @darkColor;
-    padding-left: 10px;
-    overflow-y: hidden;
-    word-wrap: break-word;
-}
-
-.twitter {
-    float: right;
-    background-color: @darkColor;
-    height: 500px;
-    width: 48%;
-    overflow: hidden;
-    word-wrap: break-word;
+.eventcontent img {
+    padding-top: 22px;
 
 }
 
-.twitter h2 {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.twitter p {
-    background-color: @darkColor;
-    padding-left: 10px;
-    overflow-y: hidden;
-    word-wrap: break-word;
-
-}
-
-#registration {
+.eventcontent p {
+    margin-right: 15px;
+    margin-bottom: 50px;
+    padding: 18px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.3em;
+    background-color: @color1;
     border-radius: 5px;
+    text-align: center;
+    line-height: 1.3em;
+}
+
+.eventcontent li  {
+    margin-left: 15px;
+    line-height: 2em;
+    color: inherit;
+    font-family: Verdana, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+
+
+}
+
+.eventcontent a {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.eventcontent a:link {
+    color: @lightColor;
+}
+
+.eventcontent a:visited {
+    color: @lightColor;
+
+}
+
+.eventcontent a:hover {
+    color: @color1;
+}
+
+.eventcontent a:active {
+    color: @color5;
+}
+
+
+/* Course Details section */
+
+#courseDeets {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: @darkColor;
+    overflow: hidden;
+    display: block;
+    border-radius: 12px;
+}
+
+.courses {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+#courseDeets:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+#courseDeets h2 {
+    padding-left: 20px;
+}
+
+/* course details buttons */
+
+.courses .fa-caret-up {
+    display: none;
+}
+
+.courses button {
+    background-color: @darkColor;
+    color: @lightColor;
+    font-family: Verdana, sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+}
+
+.courses li {
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 2em;
+    color: inherit;
+}
+
+.courses li button:link {
+    color: @lightColor;
+}
+
+.courses li button:visited {
+    color: @lightColor;;
+
+}
+
+.courses li button:hover {
+    color: @color1;
+}
+
+.courses li button:active {
+    color: @color5;
+}
+
+.courses p {
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+    display: none;
+}
+
+.courses img {
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 20px;
+    object-fit: cover;
+}
+
+/* what to bring section */
+
+#what2Bring {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    background-color: @color2;
+    overflow: hidden;
+    display: block;
+    border-radius: 3px;
+}
+
+.bring {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+#what2Bring:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+/* what to bring buttons */
+
+.bring button {
+    background-color: @color2;
+    color: @lightColor;
+    font-family: Verdana, sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.bring .fa-caret-up {
+    display: none;
+}
+
+.bring li {
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 2em;
+    padding-left: 20px;
+}
+
+.bring li button:link {
+    color: @lightColor;
+}
+
+.bring li button:visited {
+    color:@lightColor;
+
+}
+
+.bring li button:hover {
+    color: @color1;
+}
+
+.bring li button:active {
+    color: @color5;
+}
+
+.bring p {
+    font-family: Verdana, sans-serif;
+    font-size: 1.2em;
+    color: @lightColor;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+
+}
+
+#chipTimingP, #bringSwimP, #bringBikeP, #bringRunP {
+    display: none;
+    font-size: 1em;
+    text-align: left;
+}
+
+.bring img {
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 20px;
+    object-fit: cover;
+}
+
+/* Pick up and Cost includes section */
+
+#pickupCostincludes {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    background-color: @darkColor;
+    overflow: hidden;
+    display: block;
+    border-radius: 3px;
+}
+
+.pickCost {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+#pickupCostincludes:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.pickCost h2 {
+    padding-top: 10px;
+}
+
+.pickCost li {
+    list-style-type: none;
+    padding-bottom: 15px;
+
+}
+
+.pickCost img {
+    margin-top: 45%;
+    margin-left: 80px;
+}
+
+/* FAQS section */
+
+#FAQS {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    background-color: @color2;
+    border-radius: 3px;
+}
+
+
+.faqs button {
+    background-color:  @color2;
+    color: @lightColor;
+    font-family: Verdana, sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    display: block;
+    line-height: 2em;
+    overflow: hidden;
+}
+
+.faqs .fa-caret-up {
+    display: none;
+}
+
+.faqs li {
+    list-style-type: none;
+
+}
+
+.faqs li button:link {
+    color: @lightColor;
+}
+
+.faqs li button:visited {
+    color: @lightColor;
+
+}
+
+.faqs li button:hover {
+    color: @color1;
+}
+
+.faqs li button:active {
+    color: @color5;
+}
+
+.faqs h2 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.faqs p {
+    font-family: Verdana, sans-serif;
+    font-size: 1.2em;
+    color: @lightColor;
+    margin-right: 20px;
+    padding-bottom: 10px;
+
+}
+
+#rulesP, #noMusicP, #musicRunP, #wetsuitP, #racingBikeP {
+    display: none;
+    line-height: 1.4em;
+    margin-top: 0;
+}
+
+/* Event Information page ends*/
+
+/* registeration and contact forms */
+
+#registration  {
+    border-radius: 3px;
+    padding: 20px;
+}
+
+#contact {
+    border-radius: 3px;
     padding: 20px;
 }
 
 form {
-    background-color: @darkColor;
-    margin-top: 10px;
-    padding: 10px 20px 80px 40px;
+    background-color: @color2;
+    margin-top: 20px;
+    padding: 20px 20px 130px 40px;
 }
 
 label {
-    padding: 15px 12px 15px 0;
+    padding: 15px 15px 15px 0;
     display: inline-block;
     font-family: Futura, sans-serif;
     font-size: 1.4em;
@@ -281,14 +810,72 @@ input[type=submit]:hover {
     background-color: @color1;
 }
 
+/* registration and contact ends*/
+
+
 footer {
     padding-bottom: 20px;
     text-align: center;
     color: @lightColor;
+}
+
+@media only screen and (max-width: 400px) {
+
+    #welcome p {
+        padding-top: 24px;
+    }
 
 }
 
-@media only screen and (max-width: 665px) {
+@media only screen and (max-width: 470px) {
+
+    #startTimes h1 {
+        line-height: 1em;
+        padding-bottom: 40px;
+    }
+
+    #startTimes h2 {
+        margin-top: 40px;
+    }
+
+    #aboutus h1 {
+        margin-bottom: 10px;
+
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+    #welcome h1 {
+        font-size: 1.6em;
+    }
+
+    #aboutus h1 {
+        line-height: .9em;
+        padding-bottom: 10px;
+    }
+
+    #aboutus p {
+        padding-top: 10px;
+    }
+
+    #aboutus p:last-child {
+        padding: 0;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+    #submit {
+        float: right;
+        max-width: 40%;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
 
     .menu-btn {
         margin-bottom: 30px;
@@ -351,39 +938,195 @@ footer {
         margin-left: 10px;
     }
 
-    #boxes p {
+    .column {
         width: 100%;
-        height: auto;
     }
 
-    #column2 {
-        display: none;
-    }
-
-    .faceBook p {
+    .slideshow-container .registernow {
+        top: 113%;
+        left: 50%;
         width: 100%;
-        height: auto;
+        display: block;
+        padding: 40px;
+        margin-top: 20px;
+        border-radius: 10px;
     }
 
+    #welcome {
+        margin-top: 20px;
+    }
 
+    #welcome h1 {
+        margin-top: 86px;
+    }
+
+    #welcome p {
+        margin-top: 40px;
+    }
+
+    #startTimes h1 {
+        padding-bottom: 0;
+    }
+
+    .faqs button {
+        font-size: 1em;
+        text-align: left;
+        line-height: 1.4em;
+
+    }
+
+    .faqs p {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width: 858px) {
 
+    #links a {
+        font-size: 15px;
+        display: block;
+        color: @lightColor;
+    }
+
     header h1 {
         text-align: center;
         float: none;
+        margin-left: 100px;
     }
 
-    nav  {
+    nav {
         margin-top: 0;
 
     }
 
-    form {
+    nav ul {
+        margin-right: 20px;
 
-        margin-top: 10px;
-        padding: 10px 20px 80px 40px;
     }
 
+    main h1 {
+        padding-bottom: 20px;
+    }
+
+    #welcome h1 {
+        line-height: 1em;
+    }
+
+    #feed {
+        width: 100%;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    #feed:nth-child(1) {
+        background-color: @color2;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+
+    #feed:nth-child(2) {
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+        padding-top: 0;
+        padding-right: 20px;
+        padding-bottom: 60px;
+    }
+
+    #eventContent {
+        padding-bottom: 40px;
+    }
+
+    .eventcontent {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .eventcontent p {
+        margin-top: 10px;
+        padding: 30px;
+    }
+
+    .eventcontent li {
+        text-align: center;
+        margin-right: 60px;
+    }
+
+
+    .eventcontent img {
+        padding-top: 0;
+    }
+
+
+    #courseDeets h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .courses {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+
+    }
+
+    .courses p {
+        margin: 20px 40px 20px 0;
+    }
+
+    .courses img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bring {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    #what2Bring h2 {
+        padding-top: 10px;
+    }
+
+    .bring ul li {
+        margin-left: 22%;
+    }
+
+    .bring p {
+        margin: 10px 40px 30px 15px;
+        line-height: 1.3em;
+    }
+
+    .bring img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pickCost {
+        width: 100%;
+    }
+
+    .pickCost li {
+        text-align: left;
+        margin-right: 80px;
+    }
+
+    .pickCost p {
+        margin: 10px 40px 30px 15px;
+        line-height: 1.3em;
+    }
+
+    .pickCost img {
+        display: none;
+    }
 }
+
+
+
+
+
+
+
