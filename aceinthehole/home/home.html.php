@@ -73,7 +73,7 @@
         </div>
 
             <button class="registernow">
-                <a href="http://localhost/cas222/aceinthehole/registration/registration.html.php">REGISTER NOW!</a>
+                <a href="http://lauriewandle1030.webhostingforstudents.com/cas222/aceinthehole/registration/registration.html.php">REGISTER NOW!</a>
             </button>
     </div>
     <br>
