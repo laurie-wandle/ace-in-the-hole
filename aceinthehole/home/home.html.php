@@ -48,27 +48,27 @@
     <div class="slideshow-container">
 
         <div class="mySlides fade">
-            <img src="../images/olympic10K.png"  alt="Olympic 10K" style="width:100%">
+            <img src="../images/olympic10K.png"  alt="Olympic 10K" style="width:100% height:auto">
             <div class="text">Olympic 10K</div>
         </div>
 
         <div class="mySlides fade">
-            <img src="../images/happy.jpg" alt="Be Happy" style="width:100%">
+            <img src="../images/happy.jpg" alt="Be Happy" style="width:100% height:auto">
             <div class="text">Be Happy</div>
         </div>
 
         <div class="mySlides fade">
-            <img src="../images/longcourseswim.jpg" alt="Long Course Swim" style="width:100%">
+            <img src="../images/longcourseswim.jpg" alt="Long Course Swim" style="width:100% height:auto">
             <div class="text">Long Course Swim </div>
         </div>
 
         <div class="mySlides fade">
-            <img src="../images/longcourse.jpg" alt="Long Course Bike" style="width:100%">
+            <img src="../images/longcourse.jpg" alt="Long Course Bike" style="width:100% height:auto">
             <div class="text">Long Course Bike </div>
         </div>
 
         <div class="mySlides fade">
-            <img src="../images/splashndash.jpg" alt="Splash n Dash" style="width:100%">
+            <img src="../images/splashndash.jpg" alt="Splash n Dash" style="width:100% height:auto">
             <div class="text">Splash n' Dash</div>
         </div>
 
