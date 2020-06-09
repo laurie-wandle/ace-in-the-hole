@@ -55,14 +55,14 @@
             <ul>
                 <li><a href="#courseDeets">COURSE DETAILS</a></li>
                 <li><a href="#what2Bring">WHAT TO BRING</a></li>
-                <li><a href="#pickupCostincludes">COST INCLUDES</a></li>
                 <li><a href="#pickupCostincludes">PACKET PICKUP</a></li>
+                <li><a href="#pickupCostincludes">COST INCLUDES</a></li>
                 <li><a href="#FAQS">FAQs</a></li>
             </ul>
         </div>
 
         <div class="eventcontent">
-            <img src="../images/stjohnbridge2.jpg" alt="St. John's Bridge" width="350" height="450">
+            <img src="../images/stjohnbridge2.jpg" alt="St. John's Bridge">
         </div>
     </div>
 
@@ -139,7 +139,7 @@
                         so you can enjoy all the post event festivities!</p>
 
                    <ul>
-                       <li><button id="chipTiming"><i class="fas fa-caret-down"></i><i class="fas fa-caret-up"></i> CHIP TIMING PIECE</button></li>
+                       <li><button id="chipTiming"><i class="fas fa-caret-down"></i><i class="fas fa-caret-up"></i> CHIP TIMING</button></li>
                             <p id="chipTimingP">You must wear your chip timing piece during the entire event. You will be given a band that will hold your chip
                                 timing piece around your ankle throughout the entire event. Be sure that it is snapped tightly. Be sure to have your Chip Timing
                                 piece on before you start the race and be sure to step over the timing mats after each segment of the race. If you are wearing a
@@ -240,6 +240,9 @@
                 <li><button id="racingBike"><i class="fas fa-caret-down"></i><i class="fas fa-caret-up"></i> DO I HAVE TO USE A ROAD OR RACING BIKE?</button></li><br>
                 <p id="racingBikeP"> No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</p>
             </ul>
+
+
+
 
 
 
